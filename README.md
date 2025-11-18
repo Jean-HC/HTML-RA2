@@ -1,8 +1,8 @@
 # HTML-RA2
 Project HTML for Alonso de Avellaneda
 
-La idea de nuestro proyecto se enfoca en los paises sobre sus culturas y sus comidas mas tradicionales, un poco de contexto basico de cada pais junto con los platillos mas tipicos de estos.
-Incluiremos fotos y demas apartadas para que se ajusten a los cirterios de la evaluación.
+La idea de nuestro proyecto se enfoca en un poco de contexto historico basico de cada pais junto con los platillos mas tipicos de estos.
+Incluiremos fotos y demas apartados para que se ajusten a los cirterios de la evaluación.
 
 1. India: Aproximadamente 1,45 mil millones de habitantes.
 2. China: Alrededor de 1,41 mil millones de habitantes.
