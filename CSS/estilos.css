@@ -7,7 +7,7 @@ body {
 
 /* ¿Por qué hay un espacio en blanco sin el padding? */
 header {
-    background-color: #2486a7;
+    background-color: red;
     color: white;
     padding: 20px 0;
     text-align: center;
