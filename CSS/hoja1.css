@@ -1,0 +1,44 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Familjen Grotesk';
+}
+
+.body1 {
+    min-height: 100vh;
+    background: url(/IMAGENES/ICONOS/fondoindex1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.encabezado {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 97;
+    background-color: rgb(139, 0, 0);
+
+}
+
+
+.navbar a {
+    font-size: 1.15rem;
+     color: white;
+     text-decoration: none;
+     font-weight: 500;
+     margin-left: 2.5rem ;
+}
+
+#img1 {
+  width: 5%;
+  height: 10%;
+
+}
