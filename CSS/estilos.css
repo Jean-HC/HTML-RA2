@@ -12,6 +12,8 @@ header {
     color: white;
     padding: 20px 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 header h1 {
@@ -29,6 +31,9 @@ nav {
     text-align: center;
 }
 
+nav ul {
+    
+}
 main{
     padding: 20px;
 }
