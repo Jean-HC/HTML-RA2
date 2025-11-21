@@ -3,14 +3,23 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-rows: auto 1fr 1fr auto;
 }
 
-/* ¿Por qué hay un espacio en blanco sin el padding? */
 header {
-    background-color: #CC0000;
+    background-color: rgb(139, 0, 0);
     color: white;
     padding: 20px 0;
     text-align: center;
+}
+
+header h1 {
+    font-size: 3vw;
+}
+
+header p {
+    font-size: 1.2em;
 }
 
 nav {
@@ -33,7 +42,7 @@ aside{
 }
 
 footer{
-    background-color: #CC0000;
+    background-color: rgb(139, 0, 0);
     color: white;
     text-align: center;
     padding: 10px 0;
