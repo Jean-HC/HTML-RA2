@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -7,6 +13,7 @@ body {
     grid-template-rows: auto auto auto;
 }
 
+/*colores alternativos #959FB6 #E04146*/
 header {
     background-color: rgb(139, 0, 0);
     color: white;
@@ -15,10 +22,6 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-
-.imagenizquierda {
-    margin-right: 200px;
 }
 
 .titulo{
