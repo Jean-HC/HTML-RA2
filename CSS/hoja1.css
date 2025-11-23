@@ -8,22 +8,35 @@
 
 .presentaciondivprincipal {
 background-color: white;
-width: 30%;
-margin-left: 31%;
+width: 77%;
+margin-left: 10%;
+background: linear-gradient(to bottom, rgb(182, 179, 179), rgba(255, 255, 255, 0));
+margin-top: 15%;
+position: fixed;
 
 }
 
 .info1{
     font-style: italic;
     color: white;
-    
-    
+    font-size: 200%; 
+    text-align: j;
 }
+
+.divimgprincipal{
+    position: fixed;
+    border-radius: 30%;
+    width: 25%;
+    overflow: hidden;
+    margin-left: 34%;
+    margin-top: 1%;
+}
+
 
 .indiadivprincipal {
     width: 15%;
     height: auto;
-    margin-top: 25%;
+    margin-top: 20.5%;
     margin-left: 12%;
     position: fixed;
     overflow: hidden;
@@ -36,7 +49,7 @@ margin-left: 31%;
 .chinadivprincipal {
     width: 15%;
     height: auto;
-    margin-top: 25%;
+    margin-top: 20.5%;
     margin-left: 29%;
     position: fixed;
     overflow: hidden;
@@ -48,7 +61,7 @@ margin-left: 31%;
 .usadivprincipal {
     width: 18%;
     height: auto;
-    margin-top: 25%;
+    margin-top: 20.5%;
     margin-left: 46%;
     position: fixed;
     overflow: hidden;
@@ -60,7 +73,7 @@ margin-left: 31%;
 .indonesiadivprincipal {
     width: 16%;
     height: auto;
-    margin-top: 25%;
+    margin-top: 20.5%;
     margin-left: 66%;
     position: fixed;
     overflow: hidden;
@@ -72,7 +85,7 @@ margin-left: 31%;
 .pakistandivprincipal{
     width: 17%;
     height: auto;
-    margin-top: 35%;
+    margin-top: 30%;
     margin-left: 28%;
     position: fixed;
     overflow: hidden;
@@ -83,7 +96,7 @@ margin-left: 31%;
 .españadivprincipal {
     width: 16%;
     height: auto;
-    margin-top: 35%;
+    margin-top: 30%;
     margin-left: 47%;
     position: fixed;
     overflow: hidden;
@@ -91,6 +104,63 @@ margin-left: 31%;
     background: linear-gradient(to bottom, rgb(131, 129, 129), rgba(255, 255, 255, 0));
 }
 
+
+/* Footer  */
+
+.footer {
+ background-color: #9d2c2c;
+ color: #fff;
+ padding: 30px 20px;
+ font-family: Arial, sans-serif;
+}
+.footer-container {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 20px;
+}
+.footer-section {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.footer-logo img {
+ width: 120px;
+}
+.footer-social a img {
+ width: 35px;
+ margin: 0 10px;
+ transition: transform 0.3s;
+}
+.footer-social a img:hover {
+ transform: scale(1.15);
+}
+.footer-contact a {
+ color: #81b4ed;
+ text-decoration: none;
+}
+.footer-contact a:hover {
+ text-decoration: underline;
+}
+
+.footer-copy {
+ text-align: center;
+ margin-top: 20px;
+ opacity: 0.7;
+}
+@media (min-width: 700px) {
+ .footer-container {
+ flex-direction: row;
+ justify-content: space-between;
+ max-width: 1000px;
+ margin: auto;
+ }
+ .footer-section {
+ justify-content: flex-start;
+ }
+}
+
+/* Imagenes clases */
 .indoseniaprincipal{
         width: 100%;
 }
@@ -121,33 +191,6 @@ margin-left: 31%;
     margin-left: 30px;
 }
 
-.slider-fixed {
-    position: fixed;
-    top: 10%;
-    right: 5%;         
-    width: 30%;
-    aspect-ratio: 16 / 9;
-    overflow: hidden;
-    border-radius: 3%;
-    z-index: 1000;
-    background: rgba(0,0,0,0.5);  
-}
-
-.slider-fixed ul {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    width: 600%;
-    animation: slide 24s infinite linear;
-}
-
-.slider-fixed li {
-    flex: 0 0 100%;
-}
-
-.slider-fixed img {
+.imgcocina{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
