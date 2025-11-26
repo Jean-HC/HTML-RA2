@@ -31,164 +31,163 @@
         </ul>
     </nav>
     
-    <div class="content-wrapper">
-        <main>
-            <form action="#" method="post">
+    <main>
+        <form action="#" method="post">
+            <div>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre">
+            </div>
+            <div>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="La contraseña debe tener al menos 8 caracteres, incluyendo una letra mayúscula, una letra minúscula y un número." minlength="8">
+            </div>
+            <div>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" pattern="\+?[1-9]\d{1,14}$">
+            </div>
+            <div>
+                <label for="nombre-receta">Nombre de la receta</label>
+                <input type="text" id="nombre-receta" name="nombre-receta" placeholder="Ej: Paella valenciana, cerdo agridulce, tacos al pastor..." required maxlength="100">
+            </div>
+            <div>
+                <label for="lista">País de origen</label>
+                <select name="lista" id="lista">
+                    <option value="deffault" selected disabled>Selecciona un país...</option>
+                    <option value="italia">Italia</option>
+                    <option value="francia">Francia</option>
+                    <option value="mexico">México</option>
+                    <option value="espana">España</option>
+                    <option value="japon">Japón</option>
+                    <option value="china">China</option>
+                    <option value="india">India</option>
+                    <option value="tailandia">Tailandia</option>
+                    <option value="grecia">Grecia</option>
+                    <option value="turquia">Turquía</option>
+                    <option value="brasil">Brasil</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="peru">Perú</option>
+                    <option value="usa">Estados Unidos</option>
+                    <option value="otro">Otro país</option>
+                </select>
+            </div>
+            <div>
+                <label for="tiempo">Tiempo de preparación</label>
+                <input type="number" id="tiempo" name="tiempo" required min="5" max="600" placeholder="En minutos">
+            </div>
+            <div>
+                <label for="ingredientes">Ingredientes:</label>
+                <textarea name="ingredientes" id="ingredientes" required placeholder="Lista los ingredientes necesarios, uno por línea..." minlength="20" maxlength="1000"></textarea>
+            </div>
+            <div>
+                <label for="preparacion">Preparación</label>
+                <textarea id="preparacion" name="preparacion" placeholder="Describe paso a paso cómo preparar la receta..." required minlength="50" maxlength="3000"></textarea>
+            </div>
+            <div>
                 <div>
-                    <label for="nombre">Nombre completo:</label>
-                    <input type="text" id="nombre" name="nombre">
-                </div>
-                <div>
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email">
-                </div>
-                <div>
-                    <label for="password">Contraseña:</label>
-                    <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="La contraseña debe tener al menos 8 caracteres, incluyendo una letra mayúscula, una letra minúscula y un número." minlength="8">
-                </div>
-                <div>
-                    <label for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefono" name="telefono" pattern="\+?[1-9]\d{1,14}$">
-                </div>
-                <div>
-                    <label for="nombre-receta">Nombre de la receta</label>
-                    <input type="text" id="nombre-receta" name="nombre-receta" placeholder="Ej: Paella valenciana, cerdo agridulce, tacos al pastor..." required maxlength="100">
-                </div>
-                <div>
-                    <label for="lista">País de origen</label>
-                    <select name="lista" id="lista">
-                        <option value="deffault" selected disabled>Selecciona un país...</option>
-                        <option value="italia">Italia</option>
-                        <option value="francia">Francia</option>
-                        <option value="mexico">México</option>
-                        <option value="espana">España</option>
-                        <option value="japon">Japón</option>
-                        <option value="china">China</option>
-                        <option value="india">India</option>
-                        <option value="tailandia">Tailandia</option>
-                        <option value="grecia">Grecia</option>
-                        <option value="turquia">Turquía</option>
-                        <option value="brasil">Brasil</option>
-                        <option value="argentina">Argentina</option>
-                        <option value="peru">Perú</option>
-                        <option value="usa">Estados Unidos</option>
-                        <option value="otro">Otro país</option>
-                    </select>
-                </div>
-                <div class="campo mitad requerido">
-                    <label for="tiempo">Tiempo de preparación</label>
-                    <input type="number" id="tiempo" name="tiempo" required min="5" max="600" placeholder="En minutos">
-                </div>
-                <div>
-                    <label for="ingredientes">Ingredientes:</label>
-                    <textarea name="ingredientes" id="ingredientes" required placeholder="Lista los ingredientes necesarios, uno por línea..." minlength="20" maxlength="1000"></textarea>
-                </div>
-                <div>
-                    <label for="preparacion">Preparación</label>
-                    <textarea id="preparacion" name="preparacion" placeholder="Describe paso a paso cómo preparar la receta..." required minlength="50" maxlength="3000"></textarea>
-                </div>
-                <div>
-                    <div>
-                        <input type="radio" id="facil" name="dificultad" value="facil">
-                        <label for="facil">Fácil</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="medio" name="dificultad" value="medio">
-                        <label for="medio">Medio</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="dificil" name="dificultad" value="dificil">
-                        <label for="dificil">Difícil</label>
-                    </div>
+                    <input type="radio" id="facil" name="dificultad" value="facil">
+                    <label for="facil">Fácil</label>
                 </div>
                 <div>
-                    <div>
-                        <input type="checkbox" id="vegetariano" name="vegetariano">
-                        <label for="vegetariano">Vegetariano</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="vegano" name="vegano">
-                        <label for="vegano">Vegano</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="sin-gluten" name="sin-gluten">
-                        <label for="sin-gluten">Sin gluten</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="sin-lactosa" name="sin-lactosa">
-                        <label for="sin-lactosa">Sin lactosa</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="picante" name="picante">
-                        <label for="picante">Picante</label>
-                    </div>
+                    <input type="radio" id="medio" name="dificultad" value="medio">
+                    <label for="medio">Medio</label>
                 </div>
                 <div>
-                    <label for="imagen">Foto de tu plato</label>
-                    <input type="file" name="imagen" id="imagen" accept="image/png, image/jpeg, image/jpg" required>
-                    <small>Formatos aceptados: JPG, PNG, JPEG</small>
+                    <input type="radio" id="dificil" name="dificultad" value="dificil">
+                    <label for="dificil">Difícil</label>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <input type="checkbox" id="vegetariano" name="vegetariano">
+                    <label for="vegetariano">Vegetariano</label>
                 </div>
                 <div>
-                    <label for="video">Video de la receta (opcional)</label>
-                    <input type="url" name="video" id="video" placeholder="https://ejemplo.com/video">
+                    <input type="checkbox" id="vegano" name="vegano">
+                    <label for="vegano">Vegano</label>
                 </div>
                 <div>
-                    <button type="submit">Enviar receta</button>
-                    <button type="reset">Limpiar formulario</button>
+                    <input type="checkbox" id="sin-gluten" name="sin-gluten">
+                    <label for="sin-gluten">Sin gluten</label>
                 </div>
-            </form>
-        </main>
+                <div>
+                    <input type="checkbox" id="sin-lactosa" name="sin-lactosa">
+                    <label for="sin-lactosa">Sin lactosa</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="picante" name="picante">
+                    <label for="picante">Picante</label>
+                </div>
+            </div>
+            <div>
+                <label for="imagen">Foto de tu plato</label>
+                <input type="file" name="imagen" id="imagen" accept="image/png, image/jpeg, image/jpg" required>
+                <small>Formatos aceptados: JPG, PNG, JPEG</small>
+            </div>
+            <div>
+                <label for="video">Video de la receta (opcional)</label>
+                <input type="url" name="video" id="video" placeholder="https://ejemplo.com/video">
+            </div>
+            <div>
+                <button type="submit">Enviar receta</button>
+                <button type="reset">Limpiar formulario</button>
+            </div>
+        </form>
+    </main>
         
-        <aside>
-            <section class="consejos">
-                <h3>💡 Consejos para tu receta</h3>
-                <ul>
-                    <li>Sé específico con las cantidades de ingredientes</li>
-                    <li>Incluye tiempos de cocción exactos</li>
-                    <li>Menciona temperaturas del horno si aplica</li>
-                    <li>Añade consejos de presentación</li>
-                    <li>Indica el número de porciones</li>
-                </ul>
-            </section>
+    <aside>
+        <section>
+            <h3>Consejos para tu receta</h3>
+            <ul>
+                <li>Sé específico con las cantidades de ingredientes</li>
+                <li>Incluye tiempos de cocción exactos</li>
+                <li>Menciona temperaturas del horno si aplica</li>
+                <li>Añade consejos de presentación</li>
+                <li>Indica el número de porciones</li>
+            </ul>
+        </section>
 
-            <section class="recetas-populares">
-                <h3>🔥 Recetas más populares</h3>
-                <ol>
-                    <li><a href="#">Paella valenciana</a></li>
-                    <li><a href="#">Tacos al pastor</a></li>
-                    <li><a href="#">Pizza margarita</a></li>
-                    <li><a href="#">Sushi variado</a></li>
-                    <li><a href="#">Ramen casero</a></li>
-                </ol>
-            </section>
+        <section>
+            <h3>Recetas más populares</h3>
+            <ol>
+                <li><a href="#">Paella valenciana</a></li>
+                <li><a href="#">Tacos al pastor</a></li>
+                <li><a href="#">Pizza margarita</a></li>
+                <li><a href="#">Sushi variado</a></li>
+                <li><a href="#">Ramen casero</a></li>
+            </ol>
+        </section>
 
-            <section class="estadisticas">
-                <h3>📊 Nuestra comunidad</h3>
-                <p><strong>1,234</strong> recetas compartidas</p>
-                <p><strong>5,678</strong> usuarios registrados</p>
-                <p><strong>89</strong> países representados</p>
-            </section>
+        <section>
+            <h3>Nuestra comunidad</h3>
+            <p><strong>1,234</strong> recetas compartidas</p>
+            <p><strong>5,678</strong> usuarios registrados</p>
+            <p><strong>89</strong> países representados</p>
+        </section>
 
-            <section class="ayuda">
-                <h3>❓ ¿Necesitas ayuda?</h3>
-                <p>Si tienes dudas sobre cómo completar el formulario, consulta nuestra <a href="#">guía paso a paso</a> o <a href="#">contáctanos</a>.</p>
-            </section>
+        <section>
+            <h3>¿Necesitas ayuda?</h3>
+            <p>Si tienes dudas sobre cómo completar el formulario, consulta nuestra <a href="#">guía paso a paso</a> o <a href="#">contáctanos</a>.</p>
+        </section>
 
-            <section class="newsletter">
-                <h3>📧 Boletín semanal</h3>
-                <p>Recibe las mejores recetas directamente en tu correo</p>
-                <form action="#" method="post">
-                    <input type="email" placeholder="tu@email.com" required>
-                    <button type="submit">Suscribirse</button>
-                </form>
-            </section>
-        </aside>
-    </div>
+        <section>
+            <h3>Boletín semanal</h3>
+            <p>Recibe las mejores recetas directamente en tu correo</p>
+            <form action="#" method="post">
+                <input type="email" placeholder="tu@email.com" required>
+                <button type="submit">Suscribirse</button>
+            </form>
+        </section>
+    </aside>
+    
     
     <footer>
         <div>
             <p>&copy; 2025 Comilones por el mundo. Todos los derechos reservados.</p>
-            <div class="redes-sociales">
+            <div>
                 <a href="https://www.facebook.com" target="_blank">
                     <img src="../IMAGENES/facebook-icon.png" alt="Icono de Facebook" width="30" height="30">
                 </a>
