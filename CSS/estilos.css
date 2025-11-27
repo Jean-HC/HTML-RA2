@@ -7,10 +7,13 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
     display: grid;
-    grid-template-rows: auto auto auto;
+    grid-template-areas:    
+    "header header header header"
+    "nav nav nav nav"
+    "main main main aside "
+    "main main main aside"
+    "footer footer footer footer";
 }
 
 /*colores alternativos #959FB6 #E04146*/
@@ -21,11 +24,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-
-.imagenizquierda {
-    margin-right: 20%;
-    margin-left: 2%;
+    grid-area: header;
 }
 
 .titulo{
@@ -43,7 +42,7 @@ header p {
 nav {
     background-color: #333;
     color: white;
-    text-align: center;;
+    grid-area: nav;
 }
 
 nav ul {
@@ -51,10 +50,14 @@ nav ul {
     display: flex;
 }
 main{
-    padding: 20px;
+    grid-area: main;
 }
 
 
-aside{
+aside {
+    grid-area: aside;
+}
 
+footer {
+    grid-area: footer;
 }
