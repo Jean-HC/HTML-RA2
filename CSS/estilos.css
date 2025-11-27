@@ -7,21 +7,24 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
     display: grid;
-    grid-template-rows: auto auto auto;
+    grid-template-areas:    
+    "header header header header"
+    "nav nav nav nav"
+    "main main main aside "
+    "main main main aside"
+    "footer footer footer footer";
 }
 
 /*colores alternativos #959FB6 #E04146*/
 header {
     background-color: rgb(139, 0, 0);
     color: white;
-    padding: 20px 0;
     text-align: center;
     display: flex;
     flex-direction: row;
     align-items: center;
+    grid-area: header;
 }
 
 .titulo{
@@ -39,8 +42,7 @@ header p {
 nav {
     background-color: #333;
     color: white;
-    padding: 10px;
-    text-align: center;;
+    grid-area: nav;
 }
 
 nav ul {
@@ -48,23 +50,14 @@ nav ul {
     display: flex;
 }
 main{
-    padding: 20px;
+    grid-area: main;
 }
 
-form {
 
+aside {
+    grid-area: aside;
 }
 
-aside{
-
-}
-
-footer{
-    background-color: rgb(139, 0, 0);
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+footer {
+    grid-area: footer;
 }
