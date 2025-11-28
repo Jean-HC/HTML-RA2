@@ -7,13 +7,6 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    display: grid;
-    grid-template-areas:    
-    "header header header header"
-    "nav nav nav nav"
-    "main main main aside "
-    "main main main aside"
-    "footer footer footer footer";
 }
 
 /*colores alternativos #959FB6 #E04146*/
@@ -21,22 +14,15 @@ header {
     background-color: rgb(139, 0, 0);
     color: white;
     text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     grid-area: header;
 }
 
-.titulo{
-    text-align: center;
-}
-
 header h1 {
-    font-size: 3vw;
+    font-size: 4vw;
 }
 
 header p {
-    font-size: 1.2em;
+    font-size: 2vw;
 }
 
 nav {
@@ -51,6 +37,8 @@ nav ul {
 }
 main{
     grid-area: main;
+    margin: auto;
+    width: 90%;
 }
 
 
